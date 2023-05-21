@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/gradient"
+    tools:context="com.example.sqlite.MainActivity">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:textColorHint="@color/white"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/editText_name"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignStart="@+id/editText_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:padding="25dp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editText_Marks"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_surname"
+        android:layout_alignStart="@+id/editText_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Marks"
+        android:textColorHint="@color/white"
+        android:padding="25dp" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Marks"
+        android:layout_alignStart="@+id/editText_Marks"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="ID"
+        android:textColorHint="@color/white"
+        android:padding="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_add"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/editText_id"
+        android:layout_alignStart="@+id/editText_surname"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Show All"
+        android:backgroundTint="@color/black"
+        android:id="@+id/button_viewAll"
+        android:layout_alignTop="@+id/button_add"
+        android:layout_toEndOf="@+id/button_add"
+        android:layout_marginStart="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/button_update"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/button_add"
+        android:layout_alignStart="@+id/button_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:id="@+id/button_delete"
+        android:layout_alignBottom="@+id/button_update"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:backgroundTint="@color/black"
+        android:layout_alignEnd="@+id/button_viewAll" />
+
+</RelativeLayout>
